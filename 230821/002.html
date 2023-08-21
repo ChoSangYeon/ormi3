@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float</title>
+  <style>
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+  }
+
+  .float-left .box {
+    float: left;
+  }
+
+  .float-right {
+    clear: both;
+  }
+
+  .float-right .box {
+    float: right;
+  }
+  .float-right+p {
+    clear: both;
+  }
+
+  </style>
+</head>
+
+<body>
+  <div>
+    <span class="box">box</span>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro ratione ex incidunt veniam dolores, perspiciatis repellendus dolore repudiandae unde ut quam totam nostrum amet tempora, recusandae ducimus odio cumque adipisci.</p>
+  </div>
+  <div class="float-left">
+    <span class="box">box</span>
+    <p>lorem</p>
+  </div>
+
+</body>
+
+</html>
