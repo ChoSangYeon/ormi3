@@ -1,9 +1,8 @@
 ul{
   list-style: none;
 }
-/* 로그인, 조인 페이지 */
-.login,
-.join {
+/* 로그인 페이지 */
+.login{
   width:400px;
   margin: auto;
 
@@ -13,10 +12,6 @@ ul{
   text-align: center;
 }
 
-.main-desc{
-  color: #767676;
-  margin: 10px 0 32px;
-}
 /* 컨테이너1 */
 .main-form{
   display: flex;
@@ -34,13 +29,9 @@ ul{
   width: 80px;
 }
 .flex-input input{
-  height:28px;
   flex-grow: 1;
-  border:1px solid #ddd;
-  border-radius: 4px;
 }
-.login-btn,
-.join-btn {
+.login-btn{
   background-color: royalblue;
   border: 0;
   border-radius: 4px;

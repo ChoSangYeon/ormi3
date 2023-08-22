@@ -10,11 +10,11 @@
 @font-face {
   font-family: 'Pretendard-Bold';
   src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 700;
+  font-style: bold;
 }
 
-/* 초기화 reset ------------- */
+/* 초기화 reset ------------------------ */
 body,
 h1,
 h2,
@@ -24,13 +24,17 @@ p,
 button,
 fieldset,
 legend,
-ul, ol, li {
+ul, ol, li{
   margin: 0;
   padding: 0;
 }
-
-button:enabled {
+button:enabled{
   cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
 }
 
 body{
@@ -38,98 +42,103 @@ body{
   font-family:  'Pretendard-Regular', sans-serif;
 }
 
-/* main --------------------- */
-/* 로그인 페이지 */
-
-.main-title {
-  font-size: 24px
+/* :root{
+  --graycolor : blue;
+}
+.dark{
+  --bgcolor: black;
+  --texcolor: white;
+}
+.light{
+  --bgcolor:yellow;
+  --texcolor: blue;
 }
 
-/* common.css를 공통으로 사용하기 위해 아래서부터는 login-join.css으로 나눔  */
+body{
+  background-color: var(--bgcolor);
+  color: var(--texcolor);
+} */
 
-/* 
-.login,
-.join {
-  width: 400px;
-  margin: auto;
+/* form관련 */
+textarea,
+select,
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+  height:28px;
+  border:1px solid #ddd;
+  border-radius: 4px;
+  padding:0 8px;
+  box-sizing: border-box;
 }
-.main-title,
-.main-desc {
-  text-align: center;
+
+/* main -----------------------------  */
+.main-title{
+  font-size:24px;
 }
-.main-title {
-  font-size: 24px;
-}
-.main-desc {
+.main-desc{
   color: #767676;
   margin: 10px 0 32px;
 }
-*/
-
-/* 컨테이너1 */
-/* 
-.main-form {
+.btn-group{
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-} */
+  justify-content: flex-end;
+  gap:8px;
+  margin-top: 20px;
+}
 
-/* 컨테이너2 */
+.btn{
+  border:1px solid #ccc;
+  background-color: #eee;
+  font: inherit;
+  color:inherit;
+  border-radius: 4px;
+  min-width:80px;
+  height:40px;
+  padding: 0 8px;
+}
 
-/* .flex-input {
+a.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* layout ----------------------------- */
+.layout-header{
+  height: 80px;
+  padding: 0 20px;
+  border-bottom: 1px solid #ccc;
   display: flex;
   align-items: center;
-} */
-/* 컨테이너2:아이템 */
-/* .flex-input label {
-  width: 80px;
+  justify-content: space-between;
 }
-.flex-input input{
-  height: 28px;
+.layout-header div{
+  display: flex;
+  gap: 40px;
+}
+.layout-header div *{
+  text-decoration: none;
+  font:inherit;
+  color:inherit;
+  background:none;
+  border: 0;
+}
+
+.layout-footer{
+  text-align: center;
+  background-color: #eee;
+  padding:30px 0;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap:60px;
+}
+main{
   flex-grow: 1;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-} */
-
-/* button */
-/* .login-btn,
-.join-btn {
-  background-color: royalblue;
-  border: 0;
-  border-radius: 4px;
-  height: 36px;
-  color: white;
-  font-weight: bold;
-  transition: background-color 2s ease;
 }
-.login-btn:hover
-.join-btn:hover {
-  background-color: rgb(79, 120, 249);
-} */
-
-/* field */
-
-/* fieldset */
-/* .field {
-  border: 0;
-}
-
-.field legend {
-  float: left;
-  width: 80px;
-} */
-
-/* ->div, p */
-/* .field-flex {
-  display: flex;
-}
-.field-flex p {
-  width: 80px;
-  flex-shrink: 0;
-}
-.field ul {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-*/
