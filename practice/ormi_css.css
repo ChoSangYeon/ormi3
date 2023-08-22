@@ -1,0 +1,110 @@
+body,
+.instargram,
+.fix-btn {
+  width:400px;
+  margin: auto;
+}
+
+.instargram {
+  padding: 5px;
+}
+
+.up-container,
+.profile-line,
+.fix-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.set-btn button {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  border: 3px solid black;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 7px;
+  background-color: transparent;
+}
+
+.minnie {
+  width: 100px;
+  height: 100px; 
+  border-radius: 70%;
+  overflow: hidden;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.number {
+  width: 60%;
+  text-align: center;
+}
+
+h2,
+h3,
+p {
+  line-height: none;
+}
+
+.btn1 {
+  width: 169px;
+}
+.btn2 {
+  width: 50px;
+}
+
+.btn-line button,
+.fix-btn button {
+  background-color: #ddd;
+  border: none;
+  border-radius: 7px;
+  height: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.stroy-btn {
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 70%;
+  margin-top: 20px;
+  font-size: 2em;
+  border-color: #ddd;
+}
+
+div p {
+  margin-left:16px;
+  margin-top: -3px;
+}
+
+.post{
+  display: flex;
+  max-width: 400px;
+  margin: 0;
+}
+
+.post-img {
+  flex: 1;
+  max-width: 100%;
+  height: 130px;
+  border: 1px solid black;
+}
+
+.fix-btn button {
+  width: 78px;
+}
+
+.screen {
+  height: 200px;
+  overflow-y: auto;
+
+  mask-image: linear-gradient(0deg, transparent 0%, black 10%);
+	-webkit-mask-image: linear-gradient(0deg, transparent 0%, black 10%);
+}
